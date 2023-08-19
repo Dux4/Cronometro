@@ -22,7 +22,7 @@ a:link, :visited , :hover, :active {
     flex-direction: column;
     align-items: center;
     gap: 2rem;  /* Afasta os elementos uns dos outros*/
-    padding-top: 10rem;  /* Descolar um pco do topo*/
+    padding-top: 30vh;  /* Descolar um pco do topo*/
     background-color: rgba(63, 63, 63, 0.692); 
     min-height: 100vh; /* */
    
