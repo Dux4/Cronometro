@@ -2,17 +2,30 @@
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', sans-serif;
-
+    
 }
 
+
+
+a:link, :visited , :hover, :active {
+    text-decoration: none;
+    color: #000;
+    font: bold;
+}
+
+
 .container{
+    position:fixed;  /* Deixa a tela preenchida sem a scrolagem pra baixo*/
+    width:100%;      /* Deixa a tela preenchida sem a scrolagem pra baixo*/
+    height:100%;     /* Deixa a tela preenchida sem a scrolagem pra baixo*/
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;  /* Afasta os elementos uns dos outros*/
-    padding-top: 3rem;  /* Descolar um pco do topo*/
+    padding-top: 10rem;  /* Descolar um pco do topo*/
     background-color: rgba(63, 63, 63, 0.692); 
-    height: 100vh; /* 100 porcento da tela do usuário*/
+    min-height: 100vh; /* */
+   
 }
 
 .container h1 {
@@ -70,4 +83,18 @@
 
 #PauseBtn , #Resume  {
     display: none; /* Esconde-los para não aparecer no começo */
+}
+
+@media (max-width: 768px) {
+    .timer {
+        font-size: 28px;
+    }
+
+    .time {
+        min-width: 40px;
+    }
+
+    #miliseconds {
+        font-size: 18px;
+    }
 }
