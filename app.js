@@ -52,17 +52,23 @@ function startTimer() {
 
 function reiniciar(){
     clearInterval (inverval)
-    minutes=0
-    seconds=0
-    miliseconds=0
 
     minutesEl.textContent= "00"
     secondsEl.textContent= "00"
     milisecondsEl.textContent= "000"
 
+    minutes=0
+    seconds=0
+    miliseconds=0
+
     StartBtnEl.style.display= "block"
     ResumeBtn.style.display= "none"
     PauseBtnEl.style.display = "none"
+
+   
+    Paused = false // Bug resolvido onde o cronometro não iniciava ao resetar.
+
+
 
 }
 
@@ -85,5 +91,5 @@ function formatar(tempo) {
 } // Formata os número abaixo de 10 colocando 0 a frente.
 
 function formatarMilisegundos(tempo) {
-    return tempo<100 ? `${tempo}`.padStart(3,"0" ) : tempo
+    return tempo<100 ? `${tempo}`.padStart( 3,"0" ) : tempo
 } // Formata os número abaixo de 10 colocando 0 a frente.
