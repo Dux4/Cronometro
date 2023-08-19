@@ -4,3 +4,70 @@
     font-family: 'Orbitron', sans-serif;
 
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;  /* Afasta os elementos uns dos outros*/
+    padding-top: 3rem;  /* Descolar um pco do topo*/
+    background-color: rgba(63, 63, 63, 0.692); 
+    height: 100vh; /* 100 porcento da tela do usuário*/
+}
+
+.container h1 {
+    color: chartreuse;
+}
+
+.timer{
+    display: flex; /* Um do lado do outro*/
+    font-size: 55px;
+    font-weight: bold; /* Negrito*/
+    color: dimgray;
+}
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #172953;
+    min-width: 90px;
+}
+
+.separator{
+    padding: 0 10px;
+    color: black;
+}
+
+#miliseconds{
+    font-size: 30px;
+    color: rgb(78, 78, 78);
+
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn{
+    padding: 10px 20px ;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #172953;
+    transition: all .2s ease-in-out;   /* Animação */
+}
+
+.btn:hover{
+    transform: scale(1.2);  /* Aumenta o botão ao passar o mouse por cima */
+}
+
+#StartBtn{
+    background-color:chartreuse ;
+}
+
+#PauseBtn , #Resume  {
+    display: none; /* Esconde-los para não aparecer no começo */
+}
